@@ -76,7 +76,14 @@ public class View extends JFrame implements ActionListener {
         // Create mSearchButton with the label "Search"
         // Make this View the action listener for the button
         // Add the button to the panel
-         ?
+        JPanel panelSearch = new Jpanel ();
+        panelSeach.add(new JLabel ("Student Name:"));
+        msearch Text = new JText Field(25):
+        panelSearch.add(mSearchText);
+        mSearchButton = new Jubtton("Search"):
+        mSearchButton.addActionListener (this);
+        panelSearch.add(mSearchButton);
+        
                 ?
                         ? // PSEUDOCODE:
                         // Create a JPanel named panelHomework which uses the FlowLayout
