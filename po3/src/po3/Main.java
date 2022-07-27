@@ -31,17 +31,19 @@ public class Main {
     /**
      * The Roster of students that is read from the input file "gradebook.dat".
      */
-    ???
+    private Roster mRoster;
 
     /**
      * A reference to the View object.
      */
-    ???
+   private View mView;
 
     /**
      * This is where execution starts. Instantiate a Main object and then call run().
      */
-    ???
+    Public static void main(String[] pArgs){
+        new Maain (). run();
+    } 
 
     /**
      * exit() is called when the Exit button in the View is clicked. When we exit we have to write
@@ -65,7 +67,17 @@ public class Main {
      *     end try-catch
      * end exit
      */
-    ???
+    public void exit(){
+        try { 
+            gradeBookWriter gbWriter = new Gradebook Writer("gradebook.txt"):
+            gbWriter.writerGreadebook (getRoster());
+            System.ext(0);
+        } catch (FileNotFOundException pExcept) {
+            getView ().messageBox ("Could not open gradebook.txt for wirting. Exiting without saving ".):
+            System.exit (-1);
+        }
+    }
+    
 
     /**
      * This method returns the number of exams in the class by returning the constant NUM_EXAMS.
